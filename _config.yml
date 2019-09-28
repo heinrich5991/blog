@@ -1,0 +1,10 @@
+title: musings on teeworlds
+url: https://heinrich5991.github.io
+baseurl: /blog
+theme: minima
+
+github_username: heinrich5991
+author: heinrich5991
+
+plugins:
+  - jekyll-feed

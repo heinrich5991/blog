@@ -77,7 +77,8 @@ Firstly,
 they're not frozen](https://github.com/ddnet/ddnet/blob/ef32fc4beda0e02e9f83f5784d3a1e862b424944/src/game/server/entities/character.cpp#L363) by the time
 it's their turn. This immediately unfreezes targets of
 [l](https://github.com/ddnet/ddnet/blob/ef32fc4beda0e02e9f83f5784d3a1e862b424944/src/game/server/entities/character.cpp#L565)[a](https://github.com/ddnet/ddnet/blob/ef32fc4beda0e02e9f83f5784d3a1e862b424944/src/game/server/entities/laser.cpp#L28)[ser](https://github.com/ddnet/ddnet/blob/ef32fc4beda0e02e9f83f5784d3a1e862b424944/src/game/server/entities/laser.cpp#L69)
-and [hammer](src/game/server/entities/character.cpp#L428),
+and
+[hammer](https://github.com/ddnet/ddnet/blob/ef32fc4beda0e02e9f83f5784d3a1e862b424944/src/game/server/entities/character.cpp#L428),
 allowing tees with higher client IDs to fire their weapons even if they were
 frozen at the start of the tick.
 
@@ -121,7 +122,7 @@ client to perform this trick even if they have high ping. While we're at it, we
 could also fix the higher-lower client ID thing.
 
 My proposed fix ([#1922](https://github.com/ddnet/ddnet/pull/1922),
-[ef32fc4b](https://github.com/commit/ef32fc4beda0e02e9f83f5784d3a1e862b424944))
+[f19220f1](https://github.com/ddnet/ddnet/pull/1922/commits/f19220f1bbbb647954d6544865e3c2a2e9953037))
 does this by remembering whether you were frozen last tick and if you were, it
 lets you hammer like an automatic weapon, i.e. simply by having held that
 button.
